@@ -74,21 +74,21 @@
 
 #### list
 
-- [$值, $值, ...]
+- `[$值, $值, ...]`
 - 可以當作 stack 使用 (pop、append)
 - 可以當作 queue 使用 (popleft、append)
 - 可以在任何地方進行 O(N) cudr
 
 #### dict
 
-- {$key: $value, $key: $value, ...}
+- `{$key: $value, $key: $value, ...}`
 - key & value
 - value 可以是任何資料結構
 - key 只能是 Number, str
 
 #### tuple
 
-- ($值, $值, ...)
+- `($值, $值, ...)`
 - 值與順序不可調換，想更改只能重建tuple (immutable object)
 
 ### Pythonic
@@ -116,7 +116,7 @@
   print(a[1::2])    # [2, 4]
   ```
 
-- 從陣列製造基礎資料結構
+- 從陣列製作基礎資料結構
 
   ```.py
   class ExObj:
@@ -137,7 +137,7 @@
   # 4
   ```
 
-  - 從陣列篩選製造基礎資料結構
+  - 從陣列篩選並製作基礎資料結構
 
     ```.py
     class ExObj:

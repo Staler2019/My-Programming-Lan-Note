@@ -144,6 +144,7 @@ class Widget2(QtWidgets.QWidget):
     def widget1Fin(self):
         print('widget1 finished')
 
+
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
     window = Widget2()
