@@ -400,7 +400,7 @@ Widget 可包含或被包含於任一 Widget 或是 Layout 中
                                  pic_width,
                                  summary_height)
 
-            painter.drawPixmap(pic_rect, title_pic)  # fix display error
+            painter.drawPixmap(pic_rect, title_pic)
 
             painter.setPen(QPen(Qt.black))
             painter.setFont(QFont('Arial', 14, QFont.Bold))
@@ -413,7 +413,6 @@ Widget 可包含或被包含於任一 Widget 或是 Layout 中
 
             painter.setPen(QPen(Qt.black))
             painter.setFont(QFont('Arial', 12))
-            # painter.drawText(summary_rect, Qt.AlignLeft | Qt.AlignBottom | Qt.TextWordWrap, summary)
             painter.drawText(summary_rect, Qt.AlignLeft | Qt.AlignTop | Qt.TextWordWrap, summary)
 
             painter.restore()
