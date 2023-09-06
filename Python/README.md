@@ -2,15 +2,17 @@
 
 ## 環境
 
-- 簡稱
-    eg. Python 3.11 常簡稱 python311
+### 簡稱
 
-- 體系與套件管理工具
-  1. Python3 & pip (from Pypl) (這裡不談 Python2)
+eg. Python 3.11 常簡稱 python311
+
+### 體系與套件管理工具
+
+1. Python3 & pip (from Pypl) (這裡不談 Python2)
      - 執行檔名稱: `python`、`python3`、`python311`
      - 套件管理工具執行檔名稱: `pip`、`pip3`
 
-  2. Anaconda & conda
+2. Anaconda & conda
      - 套件穩定、比較舊(通常是 Pypl 的前一兩個版本)
      - 有 miniconda 等，較不占空間的選擇
 
@@ -21,35 +23,35 @@
 
 > 每個專案都建議建立虛擬環境，這樣每個專案的套件版本才不會因為新舊時間差異而產生版本衝突，會很難解決
 
-1. 舊 Python 版本需安裝 virtualenv 套件 
+1. 舊 Python 版本需安裝 virtualenv 套件
 2. `python -m venv $虛擬環境資料夾名稱`，eg.
 
-    ```.ps1
+    ```shell
     python -m venv venv
     ```
 
 3. activation
    - `windows`
 
-        ```.bat
+        ```shell
         .\venv\Scripts\activate.bat
         ```
 
         or
 
-        ```.ps1
+        ```shell
         .\venv\Scripts\Activate.ps1
         ```
 
-   - `linux` `mac`
+   - `linux`/`mac`
 
-        ```.sh
+        ```shell
         source ./venv/bin/activate
         ```
 
 4. deactivation
 
-    ```.sh
+    ```shell
     deactivate
     ```
 
@@ -57,7 +59,7 @@
 
 - `pip install $套件名稱`，可加上判斷確保套件版本，eg.
 
-    ```.sh
+    ```shel
     pip install PySide6==6.5.2
     ```
 
@@ -66,7 +68,11 @@
   - 安裝套件方式 `pip install -r requirements.txt`
   - 產生方式
       1. 自己手刻
-      2. 由目前環境所有套件產生 `pip freeze > requirements.txt`
+      2. 由目前環境所有套件產生
+
+         ```shell
+         pip freeze > requirements.txt
+         ```
 
 ## Pythonic: Python 特有寫法
 
@@ -97,7 +103,7 @@
 
 - 三元運算子
 
-  ```.py
+  ```python
   def isTrue():
     return True
 
@@ -106,7 +112,7 @@
 
 - list 迭代 `list_obj[起始位置:終點位置:間隔]`
 
-  ```.py
+  ```python
   a = [1, 2, 3, 4]
 
   print(a[0])       # 1
@@ -118,7 +124,7 @@
 
 - 從陣列製作基礎資料結構
 
-  ```.py
+  ```python
   class ExObj:
     def __init__(self, num: int):
       self.num = num
@@ -139,7 +145,7 @@
 
   - 從陣列篩選並製作基礎資料結構
 
-    ```.py
+    ```python
     class ExObj:
       def __init__(self, num: int):
         self.num = num
@@ -155,7 +161,7 @@
   
   - 須注意用法差異
 
-    ```.py
+    ```python
     a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
     print([i for i in a if i > 5])
@@ -163,7 +169,6 @@
 
     print([i if i > 5 else 99 for i in a])
     # [99, 99, 99, 99, 99, 6, 7, 8, 9]
-
     ```
 
 #### 延伸閱讀
