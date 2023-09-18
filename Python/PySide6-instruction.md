@@ -447,6 +447,10 @@ Widget 可包含或被包含於任一 Widget 或是 Layout 中
 - 若要建立由某些 Widget 更改而來的顯示方式，可以替換該 QObject 的 paintEvent()
 - 更改 painEvent() 及 paint() 中 QRect 幾乎要手動實作邊界確認，且常常調半天仍重疊顯示於其他已顯示的畫筆筆跡上，導致<span style="color:red">此項實作十分困難</span>
 
+## MVC 學習參考
+
+<https://stackoverflow.com/questions/26698628/mvc-design-with-qt-designer-and-pyqt-pyside>
+
 ## Reference
 
 1. My experiences
