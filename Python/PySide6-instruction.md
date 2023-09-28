@@ -459,3 +459,5 @@ Widget 可包含或被包含於任一 Widget 或是 Layout 中
 4. <https://stackoverflow.com/questions/73179661/unable-remove-row-in-proper-order-from-qtableview>
 5. <https://blog.csdn.net/zhouzhiwengang/article/details/119741602>
 6. <https://stackoverflow.com/questions/72951147/pyside-tableview-and-pandas-add-row>
+
+> 筆記同步發布於 [Github](https://github.com/Staler2019/My-Programming-Lan-Note)

@@ -187,3 +187,5 @@ eg. Python 3.11 常簡稱 python311
   - `Python` basis
   - `Python Environment Management` view installed packages
   - `Python Indent` correct Python Indent
+
+> 筆記同步發布於 [Github](https://github.com/Staler2019/My-Programming-Lan-Note)
